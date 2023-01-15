@@ -134,8 +134,7 @@
 
   .home--container .home--content h3 {
     font-size: 5rem;
-    color: #131313;
-    padding: 1rem 0;
+   
   }
 
   .features--container .features--btn button {
@@ -151,6 +150,9 @@
 /*=============== EXTRA  SMALL DEVICE RESPONSIVE START HERE ===============*/
 @media (max-width: 450px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
+
+
+
 }
