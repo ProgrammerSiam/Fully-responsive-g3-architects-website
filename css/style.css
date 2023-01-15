@@ -1,0 +1,385 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --nav--home--bg--color: rgba(255, 144, 14, 0.1);
+  --small--text--color: #727272;
+  --button--bg--color: #ff900e;
+  --button--text--color: #ffffff;
+
+  /*========== Font and typography ==========*/
+  --small--text--size: 1.6rem;
+}
+
+/*=============== BASE ===============*/
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  overflow: hidden;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+section {
+  padding: 5rem 10%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/*=============== HEADER STYLE START HERE ===============*/
+header {
+  background: var(--nav--home--bg--color);
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--logo h3 a {
+  font-size: 4.5rem;
+  color: #131313;
+}
+
+.nav--link {
+  display: flex;
+}
+
+.nav--link li {
+  margin-right: 3rem;
+}
+.nav--link li:last-child {
+  margin-right: 0;
+}
+
+.nav--link li a {
+  font-size: var(--small--text--size);
+  color: var(--small--text--color);
+}
+
+.nav--btn a {
+  color: #131313;
+  font-size: 2rem;
+  display: none;
+}
+
+/*=============== HOME STYLE START HERE ===============*/
+#home {
+  background: var(--nav--home--bg--color);
+}
+
+.home--container {
+  text-align: center;
+}
+
+.home--container .home--content h3 {
+  font-size: 6.4rem;
+  color: #131313;
+  padding: 1rem 0;
+}
+
+.home--container .home--content p {
+  font-size: var(--small--text--size);
+  color: var(--small--text--color);
+  padding: 1rem 0;
+}
+
+.home--container .home--content button {
+  background: var(--button--bg--color);
+  color: var(--button--text--color);
+  padding: 1.8rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.home--container .home--img {
+  margin-top: 2rem;
+}
+
+/*=============== QUICK STYLE START HERE ===============*/
+#quick {
+  margin-top: 5rem;
+}
+
+.quick--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 5rem;
+  justify-content: space-between;
+}
+
+.quick--container .quick--images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.quick--container .quick--content h3 {
+  font-size: 4.5rem;
+  padding: 1rem 0;
+}
+.quick--container .quick--content .sty--1 {
+  color: #727272;
+}
+
+.quick--container .quick--content .sty--2 {
+  color: #ff900e;
+}
+
+.quick--container .quick--content p {
+  font-size: var(--small--text--size);
+  color: var(--small--text--color);
+  max-width: 80%;
+  padding: 1rem 0;
+}
+
+.quick--container .quick--content button {
+  background: var(--button--bg--color);
+  color: var(--button--text--color);
+  padding: 1.8rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/*=============== FEATURES STYLE START HERE ===============*/
+#features {
+  margin-top: 5rem;
+}
+
+.features--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10rem;
+}
+
+.features--container .features--content h3 {
+  font-size: 4.5rem;
+  padding: 1rem 1rem;
+  border-left: 1rem solid #ff900e;
+  color: #131313;
+}
+
+.features--container .features--content p {
+  font-size: var(--small--text--size);
+  color: var(--small--text--color);
+  margin-top: 1rem;
+}
+.features--container .features--content .card--content {
+  padding: 2rem 0;
+}
+
+.features--container .features--content .card--content .card {
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
+  margin: 3rem 0;
+}
+
+.features--container .features--content .card--content .card h2 {
+  font-size: 2rem;
+  color: #131313;
+  margin-top: 2rem;
+}
+
+.features--container .features--content .card--content .card p {
+  font-size: var(--small--text--size);
+  color: var(--small--text--color);
+}
+
+.features--container .features--btn {
+  text-align: end;
+  position: relative;
+  left: 32rem;
+  bottom: 15rem;
+}
+.features--container .features--btn button {
+  background: var(--button--bg--color);
+  color: var(--button--text--color);
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 6.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.features--container .features--btn button span {
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 3.5rem;
+}
+/*=============== FACT STYLE START HERE ===============*/
+
+.fact--container .fact--content h3 {
+  font-size: 4.5rem;
+  color: #131313;
+}
+
+.fact--container .fact--content p {
+  font-size: var(--small--text--size);
+  color: var(--small--text--color);
+  padding: 1rem 0;
+}
+
+.fact--container .fact--card {
+  text-align: center;
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.fact--container .fact--card .card {
+  display: inline-block;
+  padding: 2rem 1rem;
+  border: 0.1rem solid #f1efeb;
+
+  border-radius: 1rem;
+  border-bottom: 0.8rem solid #f1efeb;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.fact--container .fact--card .card:hover {
+  border: 0.1rem solid #ff900e;
+  border-bottom: 0.8rem solid #ff900e;
+}
+
+.fact--container .fact--card h3 {
+  font-size: 4.5rem;
+  color: #424242;
+}
+
+.fact--container .fact--card p {
+  font-size: 2rem;
+  color: var(--small--text--color);
+}
+
+/*=============== SPONSOR STYLE START HERE ===============*/
+#sponsor {
+  margin-top: 5rem;
+}
+.sponsor--container {
+  text-align: center;
+}
+
+.sponsor--container .sponsor--content h3 {
+  font-size: 4.5rem;
+  color: #131313;
+}
+
+.sponsor--container .sponsor--content p {
+  font-size: var(--small--text--size);
+  color: var(--small--text--color);
+  padding: 1rem 0;
+}
+
+.sponsor--container .sponsor--card {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  column-gap: 1rem;
+}
+
+/*=============== CONTRACT STYLE START HERE ===============*/
+
+#contract {
+  margin-top: 5rem;
+}
+
+.contact--title {
+  text-align: center;
+  font-size: 4.5rem;
+  color: #131313;
+}
+
+.contact--container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact--container .contact--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact--container .contact--form input {
+  border: 0.1rem solid #f5e6e6;
+  width: 80%;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.contact--container .contact--form textarea {
+  resize: none;
+  width: 80%;
+  border: 0.1rem solid #f5e6e6;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+
+  padding: 1rem;
+}
+
+.contact--container .contact--form .contact--btn button {
+  background: var(--button--bg--color);
+  color: var(--button--text--color);
+  padding: 1.8rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/*=============== FOOTER STYLE START HERE ===============*/
+#footer {
+  background: var(--nav--home--bg--color);
+}
+
+.footer--container {
+  text-align: center;
+}
+
+.footer--container .copy--right p {
+  font-size: var(--small--text--size);
+  color: var(--small--text--color);
+}
+
+.footer--container .copy--right span {
+  color: #131313;
+  font-weight: 600;
+}

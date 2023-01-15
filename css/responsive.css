@@ -1,0 +1,147 @@
+/*=============== EXTRA LARGE DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 1200px) {
+  .features--container .features--btn {
+    display: none;
+  }
+
+  .features--img {
+    position: relative;
+    top: 20rem;
+  }
+}
+
+/*=============== LARGE DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  .features--container {
+    gap: 2rem;
+  }
+  .features--container .features--btn {
+    display: none;
+  }
+
+  .fact--container .fact--card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsor--container .sponsor--card {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    row-gap: 5rem;
+  }
+}
+
+/*=============== MEDIUM DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 768px) {
+  section {
+    padding: 5rem 2rem;
+  }
+
+  .nav--link {
+    display: none;
+  }
+
+  .nav--btn a {
+    display: block;
+  }
+
+  .home--container {
+    display: grid;
+  }
+
+  .home--container .home--img {
+    order: -1;
+  }
+
+  .quick--container {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+
+    row-gap: 2rem;
+  }
+
+  .quick--container .quick--content p {
+    max-width: 100%;
+  }
+
+  .features--container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .features--container .features--btn {
+    display: block;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+  }
+
+  .features--container .features--btn button {
+    font-size: 4.5rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .features--container .features--btn button span {
+    bottom: 2rem;
+  }
+
+  .features--img {
+    position: relative;
+    top: 0;
+  }
+
+  .fact--container .fact--card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sponsor--container .sponsor--card {
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    row-gap: 5rem;
+  }
+
+  .contact--container .contact--img {
+    text-align: center;
+  }
+
+  .contact--container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact--container .contact--form input {
+    width: 100%;
+  }
+
+  .contact--container .contact--form textarea {
+    width: 100%;
+  }
+}
+
+/*=============== SMALL DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 3rem;
+  }
+
+  .features--container .features--btn button {
+    font-size: 3.5rem;
+    padding: 0.2rem 2rem;
+  }
+
+  .features--container .features--btn button span {
+    font-size: 2.2rem;
+  }
+}
