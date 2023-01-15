@@ -127,13 +127,15 @@
 }
 
 /*=============== SMALL DEVICE RESPONSIVE START HERE ===============*/
-@media (max-width: 450px) {
+@media (max-width: 576px) {
   html {
     font-size: 50%;
   }
 
-  .header {
-    padding: 3rem;
+  .home--container .home--content h3 {
+    font-size: 5rem;
+    color: #131313;
+    padding: 1rem 0;
   }
 
   .features--container .features--btn button {
@@ -143,5 +145,12 @@
 
   .features--container .features--btn button span {
     font-size: 2.2rem;
+  }
+}
+
+/*=============== EXTRA  SMALL DEVICE RESPONSIVE START HERE ===============*/
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
   }
 }
